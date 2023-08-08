@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>YLight</title>
+    <link rel="stylesheet" href="css/normalise.min.css">
+    <link rel="stylesheet" href="css/normalise5.min.css">
+    <link rel="stylesheet" href="css/button.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/util.css">
+    <link rel="stylesheet" href="css/contact.css">
+
+    <meta content="YLight" property="og:title" />
+    <meta content="Bienvenue sur YLight" property="og:description" />
+    <meta content="https://i.imgur.com/x1CRUk4.png" property="og:image" />
+    <meta content="#F3F160" data-react-helmet="true" name="theme-color" />
+    <link rel="shortcut icon" href="android-chrome-512x512.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/81e3f2a0a6.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+  
+  </head>
+  <body>
+    <!-- partial:index.partial.html -->
+    <div class="video-bg">
+      <video width="320" height="240" autoplay loop muted>
+        <source src="assets/bg.mp4" type="video/mp4"> Votre navigateur ne supporte pas les vidéos.
+      </video>
+    </div>
+    <div id="darklight" class="dark-light hiden">
+      <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
+      </svg>
+    </div>
+
+
+      
+        <!-- HEADER 2 | HIDEN -->
+      <div class="app2">
+        <div id="header2" class="header hiden">
+          <a id="start2" href="#" onclick="hideApp();">
+            <div class="redbtn" id="startbtn"></div>
+          </a>
+            <div class="yelbtn"></div>
+            <div id="grebtn2" class="grebtn"><a class="grebtna" href="#" onclick="maximize();"></a></div>
+          <div class="header-menu">
+            <a class="menu-link is-active" id="accueil" onclick="AfficherSection('section1');" href="#">Accueil</a>
+            <a class="menu-link notify" href="https://sondage.ylight.fr" target="_blank">Sondage</a>
+            <a class="menu-link" id="nous-contacter" onclick="AfficherSection('section2');" href="#">Nous Contacter</a>
+            <a class="menu-link" id="partenaires" onclick="AfficherSection('section3');" href="#">Nos Financeurs</a>
+          </div>
+          <div class="header-img">
+            <img src="assets/Logo2.png" alt="Logo">
+          </div>
+        </div>  
+      </div>  
+
+      <!-- Section 13 -->
+    <section id="section13" class="hiden">
+      <div class="app" id="appbtn">
+        <!-- HEADER -->
+        <div id="header" class="header">
+          <a id="start" href="#" onclick="hideApp();">
+            <div class="redbtn" id="startbtn"></div>
+          </a>
+          <a id="showfs" class="" href="#" onclick="document.getElementById('section13').requestFullscreen(); showFullScreen();">
+            <div class="yelbtn"></div>
+          </a>
+          <a id="exitfs" class="hiden" href="#" onclick="document.exitFullscreen(); exitFullScreen();">
+            <div class="yelbtn"></div>
+          </a>
+          
+            <div id="grebtn" class="grebtn"><a class="grebtna" href="#" onclick="minimize();"></a></div>
+          
+          <div class="header-menu">
+            <a class="menu-link is-active" id="accueil" onclick="AfficherSection('section1');" href="#">Accueil</a>
+            <a class="menu-link notify" href="https://sondage.ylight.fr" target="_blank">Sondage</a>
+            <a class="menu-link" id="nous-contacter" onclick="AfficherSection('section2');" href="#">Nous Contacter</a>
+            <a class="menu-link" id="partenaires" onclick="AfficherSection('section3');" href="#">Nos Financeurs</a>
+          </div>
+          <div class="header-img">
+            <img src="assets/Logo2.png" alt="Logo">
+          </div>
+        </div>
+
+        <div class="wrapper">
+          <div class="left-side">
+            <div class="side-wrapper">
+              <div class="side-title">Services</div>
+              <div class="side-menu">
+                <a href="#" id="ydesign" onclick="AfficherSection('section4');">
+                  <svg viewBox="0 0 488.455 488.455" fill="currentColor">
+                    <path d="M287.396 216.317c23.845 23.845 23.845 62.505 0 86.35s-62.505 23.845-86.35 0-23.845-62.505 0-86.35 62.505-23.845 86.35 0" />
+                    <path d="M427.397 91.581H385.21l-30.544-61.059H133.76l-30.515 61.089-42.127.075C27.533 91.746.193 119.115.164 152.715L0 396.86c0 33.675 27.384 61.074 61.059 61.074h366.338c33.675 0 61.059-27.384 61.059-61.059V152.639c-.001-33.674-27.385-61.058-61.059-61.058zM244.22 381.61c-67.335 0-122.118-54.783-122.118-122.118s54.783-122.118 122.118-122.118 122.118 54.783 122.118 122.118S311.555 381.61 244.22 381.61z" />
+                  </svg> Y-Design </a>
+                <a href="#" id="ycompta" onclick="AfficherSection('section5');">
+                  <svg viewBox="0 0 512 512" fill="currentColor">
+                    <circle cx="295.099" cy="327.254" r="110.96" transform="rotate(-45 295.062 327.332)" />
+                    <path d="M471.854 338.281V163.146H296.72v41.169a123.1 123.1 0 01121.339 122.939c0 3.717-.176 7.393-.5 11.027zM172.14 327.254a123.16 123.16 0 01100.59-120.915L195.082 73.786 40.146 338.281H172.64c-.325-3.634-.5-7.31-.5-11.027z" />
+                  </svg> Y-Compta </a>
+                <a href="#" id="yweb" onclick="AfficherSection('section6');">
+                  <svg viewBox="0 0 58 58" fill="currentColor">
+                    <path d="M57 6H1a1 1 0 00-1 1v44a1 1 0 001 1h56a1 1 0 001-1V7a1 1 0 00-1-1zM10 50H2v-9h8v9zm0-11H2v-9h8v9zm0-11H2v-9h8v9zm0-11H2V8h8v9zm26.537 12.844l-11 7a1.007 1.007 0 01-1.018.033A1.001 1.001 0 0124 36V22a1.001 1.001 0 011.538-.844l11 7a1.003 1.003 0 01-.001 1.688zM56 50h-8v-9h8v9zm0-11h-8v-9h8v9zm0-11h-8v-9h8v9zm0-11h-8V8h8v9z" />
+                  </svg> Y-Web </a>
+                <a href="#" id="ycloud" onclick="AfficherSection('section7');">
+                  <svg viewBox="0 0 512 512" fill="currentColor">
+                    <path d="M499.377 46.402c-8.014-8.006-18.662-12.485-29.985-12.613a41.13 41.13 0 00-.496-.003c-11.142 0-21.698 4.229-29.771 11.945L198.872 275.458c25.716 6.555 47.683 23.057 62.044 47.196a113.544 113.544 0 0110.453 23.179L500.06 106.661C507.759 98.604 512 88.031 512 76.89c0-11.507-4.478-22.33-12.623-30.488zM176.588 302.344a86.035 86.035 0 00-3.626-.076c-20.273 0-40.381 7.05-56.784 18.851-19.772 14.225-27.656 34.656-42.174 53.27C55.8 397.728 27.795 409.14 0 416.923c16.187 42.781 76.32 60.297 115.752 61.24 1.416.034 2.839.051 4.273.051 44.646 0 97.233-16.594 118.755-60.522 23.628-48.224-5.496-112.975-62.192-115.348z" />
+                  </svg> Y-Cloud </a>
+                <a href="#" id="ydea" onclick="AfficherSection('section8');">
+                  <svg viewBox="0 0 512 512" fill="currentColor">
+                    <path d="M497 151H316c-8.401 0-15 6.599-15 15v300c0 8.401 6.599 15 15 15h181c8.401 0 15-6.599 15-15V166c0-8.401-6.599-15-15-15zm-76 270h-30c-8.401 0-15-6.599-15-15s6.599-15 15-15h30c8.401 0 15 6.599 15 15s-6.599 15-15 15zm0-180h-30c-8.401 0-15-6.599-15-15s6.599-15 15-15h30c8.401 0 15 6.599 15 15s-6.599 15-15 15z" />
+                    <path d="M15 331h196v60h-75c-8.291 0-15 6.709-15 15s6.709 15 15 15h135v-30h-30v-60h30V166c0-24.814 20.186-45 45-45h135V46c0-8.284-6.716-15-15-15H15C6.716 31 0 37.716 0 46v270c0 8.284 6.716 15 15 15z" />
+                  </svg> Y-Dea </a>
+              </div>
+              <div class="side-title">Autres</div>
+              <div class="side-menu">
+                <a href="#" id="apropos" onclick="AfficherSection('section9');">
+                  <svg viewBox="0 0 488.455 488.455" fill="currentColor">
+                    <path d="M287.396 216.317c23.845 23.845 23.845 62.505 0 86.35s-62.505 23.845-86.35 0-23.845-62.505 0-86.35 62.505-23.845 86.35 0" />
+                    <path d="M427.397 91.581H385.21l-30.544-61.059H133.76l-30.515 61.089-42.127.075C27.533 91.746.193 119.115.164 152.715L0 396.86c0 33.675 27.384 61.074 61.059 61.074h366.338c33.675 0 61.059-27.384 61.059-61.059V152.639c-.001-33.674-27.385-61.058-61.059-61.058zM244.22 381.61c-67.335 0-122.118-54.783-122.118-122.118s54.783-122.118 122.118-122.118 122.118 54.783 122.118 122.118S311.555 381.61 244.22 381.61z" />
+                  </svg> A Propos </a>
+                <a href="#" id="financeurs" onclick="AfficherSection('section10');">
+                  <svg viewBox="0 0 512 512" fill="currentColor">
+                    <circle cx="295.099" cy="327.254" r="110.96" transform="rotate(-45 295.062 327.332)" />
+                    <path d="M471.854 338.281V163.146H296.72v41.169a123.1 123.1 0 01121.339 122.939c0 3.717-.176 7.393-.5 11.027zM172.14 327.254a123.16 123.16 0 01100.59-120.915L195.082 73.786 40.146 338.281H172.64c-.325-3.634-.5-7.31-.5-11.027z" />
+                  </svg> Nos Partenaires </a>
+                <a href="#" id="equipe" onclick="AfficherSection('section11');">
+                  <svg viewBox="0 0 58 58" fill="currentColor">
+                    <path d="M57 6H1a1 1 0 00-1 1v44a1 1 0 001 1h56a1 1 0 001-1V7a1 1 0 00-1-1zM10 50H2v-9h8v9zm0-11H2v-9h8v9zm0-11H2v-9h8v9zm0-11H2V8h8v9zm26.537 12.844l-11 7a1.007 1.007 0 01-1.018.033A1.001 1.001 0 0124 36V22a1.001 1.001 0 011.538-.844l11 7a1.003 1.003 0 01-.001 1.688zM56 50h-8v-9h8v9zm0-11h-8v-9h8v9zm0-11h-8v-9h8v9zm0-11h-8V8h8v9z" />
+                  </svg> Notre Equipe </a>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="main-container">
+            <div id="contenu" class="content-wrapper">
+              
+                  <!-- Page d'acceuil -->
+              <section id="section1">
+                <div class="content-wrapper-header">
+                  <div class="content-wrapper-context">
+                      <!-- Contenu de la section "Accueil" -->
+                      <h3 class="img-content">
+                        <img class="img-logo" src="assets/dark_logo.png" YLight <br> It's Just Your Illumination
+                      </h3>
+                      <div class="content-text">YLight est une idée de regroupement de service d'e-commerce. qui souhaiterais vous aider dans la réalisation de votre idée en projet professionnel en vous proposant l'ensemble de ces services.</div>
+                      <a href="https://sondage.ylight.fr" target="_blank">
+                        <button class="content-button">Répondez à notre sondage !</button>
+                      </a>
+                  </div>
+                  <img class="content-wrapper-img" src="https://assets.codepen.io/3364143/glass.png" alt="">
+                </div>
+                <div class="content-section">
+                  <div class="content-section-title">Nos services</div>
+                  <ul>
+                    <li class="adobe-product">
+                      <div class="products"> Y-Design </div>
+                      <span class="status">
+                        <span class="status-circle red"></span> En Cours de Développement </span>
+                      <div class="button-wrapper">
+                        <a href="#" class="ydesign" id="ydesign2" onclick="AfficherSection('section4');">
+                          <button class="content-button status-button2">En Savoir Plus</button>
+                        </a>
+                      </div>
+                    </li>
+                    <li class="adobe-product">
+                      <div class="products"> Y-Compta </div>
+                      <span class="status">
+                        <span class="status-circle red"></span> En Cours de Développement </span>
+                      <div class="button-wrapper">
+                        <a href="#" id="ycompta2" onclick="AfficherSection('section5');">
+                          <button class="content-button status-button2">En Savoir Plus</button>
+                        </a>
+                      </div>
+                    </li>
+                    <li class="adobe-product">
+                      <div class="products"> Y-Web </div>
+                      <span class="status">
+                        <span class="status-circle red"></span> En Cours de Développement </span>
+                      <div class="button-wrapper">
+                        <a href="#" id="yweb2" onclick="AfficherSection('section6');">
+                          <button class="content-button status-button2">En Savoir Plus</button>
+                        </a>
+                      </div>
+                    </li>
+                    <li class="adobe-product">
+                      <div class="products"> Y-Cloud </div>
+                      <span class="status">
+                        <span class="status-circle red"></span> En Cours de Développement </span>
+                      <div class="button-wrapper">
+                        <a href="#" id="ycloud" onclick="AfficherSection('section7');">
+                        <button class="content-button status-button2">En Savoir Plus</button>
+                        </a>
+                      </div>
+                    </li>
+                    <li class="adobe-product">
+                      <div class="products"> Y-Dea </div>
+                      <span class="status">
+                        <span class="status-circle red"></span> En Cours de Développement </span>
+                      <div class="button-wrapper">
+                        <a href="#" id="ydea" onclick="AfficherSection('section8');">
+                          <button class="content-button status-button2">En Savoir Plus</button>
+                        </a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="slider">
+                  <div class="carousel owl-carousel">
+                    <div class="content-section">
+                      <div class="content-section-title">Nos Réseaux</div>
+                      <div class="apps-card">
+                        
+                        <div class="app-card">
+                          <span> Discord </span>
+                          <div class="app-card__subtext">Rejoignez notre communauté et gagnez des cadeaux !</div>
+                          <div class="app-card-buttons">
+                            <button class="content-button status-button"><a href="https://discord.gg/ylight" target="_blank" rel="noopener noreferrer">Rejoindre</a></button>
+                          </div>
+                        </div>
+
+                        <div class="app-card">
+                          <span> Twitter </span>
+                          <div class="app-card__subtext">Soyez au courant de toutes les nouveautés</div>
+                          <div class="app-card-buttons">
+                            <button class="content-button status-button"><a href="https://twitter.com/Ylight_fr" target="_blank" rel="noopener noreferrer">Rejoindre</a></button>
+                          </div>
+                        </div>
+
+                        <div class="app-card">
+                          <span> Facebook </span>
+                          <div class="app-card__subtext">Soyez au courant de certaines de nos nouveautés</div>
+                          <div class="app-card-buttons">
+                            <button class="content-button status-button"><a href="https://www.facebook.com/profile.php?id=100089916961936" target="_blank" rel="noopener noreferrer">Rejoindre</a></button>
+                          </div>
+                        </div>
+
+                        <br>
+                        <br>
+
+                        <div class="app-card">
+                          <span> Instagram </span>
+                          <div class="app-card__subtext">Soyez au courant de nos actualités depuis Instagram !</div>
+                          <div class="app-card-buttons">
+                            <button class="content-button status-button"><a href="https://www.instagram.com/ylight_fr" target="_blank" rel="noopener noreferrer">Rejoindre</a></button>
+                          </div>
+                        </div>
+
+                        <div class="app-card">
+                          <span> TikTok </span>
+                          <div class="app-card__subtext">Regardez nos conseils via nos tutoriels rapides</div>
+                          <div class="app-card-buttons">
+                            <button class="content-button status-button"><a href="https://www.tiktok.com/@ylight_fr" target="_blank" rel="noopener noreferrer">Rejoindre</a></button>
+                          </div>
+                        </div>
+
+                        <div class="app-card">
+                          <span> YouTube </span>
+                          <div class="app-card__subtext">Retrouvez tout nos tutoriels sur notre chaîne YouTube !</div>
+                          <div class="app-card-buttons">
+                            <button class="content-button status-button"><a href="https://www.youtube.com/@ylight_fr" target="_blank" rel="noopener noreferrer">Rejoindre</a></button>
+                          </div>
+                        </div>
+
+                        <br>
+                        <br>
+
+                        <div class="app-card">
+                          <span> Twitch </span>
+                          <div class="app-card__subtext">Participez à nos lives et posez vos questions !</div>
+                          <div class="app-card-buttons">
+                            <button class="content-button status-button"><a href="https://www.twitch.tv/ylight_fr" target="_blank" rel="noopener noreferrer">Rejoindre</a></button>
+                          </div>
+                        </div>
+
+                        <div class="app-card">
+                          <span> Kick </span>
+                          <div class="app-card__subtext">Retrouvez tout nos streams sur notre chaîne Kick !</div>
+                          <div class="app-card-buttons">
+                            <button class="content-button status-button"><a href="https://kick.com/yligh-fr" target="_blank" rel="noopener noreferrer">Rejoindre</a></button>
+                          </div>
+                        </div>
+
+                        <div class="app-card">
+                          <span> Mail </span>
+                          <div class="app-card__subtext">Contactez nous sur notre adresse mail !</div>
+                          <div class="app-card-buttons">
+                            <button class="content-button status-button"><a href="mailto:contact@ylight.fr" target="_blank" rel="noopener noreferrer">Rejoindre</a></button>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+                  <!-- Page: Nous contacter -->
+              <section id="section2" style="display:none">
+                <div class="content-wrapper-header">
+
+                    <div class="content-text" style="text-align: center;">
+                      YLight est une idée de regroupement de service d'e-commerce. qui souhaiterais vous aider dans la réalisation de votre idée en projet professionnel en vous proposant l'ensemble de ces services.
+                    </div>
+
+                </div>
+                <div class="formulaire">
+
+                  <center>
+                    <div class="contact1">
+                      <div class="container-contact1">
+                        <div class="contact1-pic js-tilt hov-img-zoom" data-tilt>
+                          <img src="assets/mail.jpg" alt="IMG">
+                        </div>
+                  
+                        <form class="contact1-form validate-form" method="post" action="php/form.php">
+                          <!-- <span class="contact1-form-title">
+                            Get in touch
+                          </span> -->
+                  
+                          <div class="wrap-input1 validate-input" data-validate = "Name is required">
+                            <input class="input1" type="text" name="name" placeholder="Name">
+                            <span class="shadow-input1"></span>
+                          </div>
+                  
+                          <div class="wrap-input1 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+                            <input class="input1" type="text" name="email" placeholder="Email">
+                            <span class="shadow-input1"></span>
+                          </div>
+                  
+                          <div class="wrap-input1 validate-input" data-validate = "Subject is required">
+                            <input class="input1" type="text" name="subject" placeholder="Subject">
+                            <span class="shadow-input1"></span>
+                          </div>
+                  
+                          <div class="wrap-input1 validate-input" data-validate = "Message is required">
+                            <textarea class="input1" name="message" placeholder="Message"></textarea>
+                            <span class="shadow-input1"></span>
+                          </div>
+                  
+                          <div class="container-contact1-form-btn">
+                            <button class="formbtn contact1-form-btn">
+                              <span>
+                                Envoyer
+                                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                              </span>
+                            </button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>       
+                  </center>           
+
+                </div>
+              </section>
+
+              <!-- Page: Financeurs -->
+              <section id="section3" style="display:none">
+                <h2>Nos Financeurs</h2>
+                <p>Nous sommes reconnaissants envers nos financeurs qui soutiennent notre projet et nous aident à 
+                  réaliser notre vision d'YLight. Leur engagement financier contribue à notre croissance et à notre 
+                  développement continu.</p> <br>
+
+                  <div class="partenaires">
+                    <div class="app-card2">
+                      <a href="http://" target="_blank" rel="noopener noreferrer">
+                        <img src="assets/soon.png" alt="">
+                      </a>
+                    </div>
+                    <div class="app-card2">
+                      <a href="http://" target="_blank" rel="noopener noreferrer">
+                        <img src="assets/soon.png" alt="">
+                      </a>
+                    </div>
+                    <div class="app-card2">
+                      <a href="http://" target="_blank" rel="noopener noreferrer">
+                        <img src="assets/soon.png" alt="">
+                      </a>
+                    </div>
+                    <div class="app-card2">
+                      <a href="http://" target="_blank" rel="noopener noreferrer">
+                        <img src="assets/soon.png" alt="">
+                      </a>
+                    </div>
+                  </div> <br>
+
+                  <p>
+                    Nous tenons à remercier chaleureusement nos financeurs pour leur confiance et leur soutien dans notre entreprise. Leur appui nous permet d'innover, d'offrir des services de qualité et de poursuivre notre mission d'aider nos clients à concrétiser leurs idées en projet professionnel.
+                  </p>
+                  <p>
+                    Si vous souhaitez également soutenir YLight et devenir un de nos financeurs, nous serions heureux de discuter des opportunités de collaboration. Veuillez nous contacter à l'adresse <a href="mailito:financeurs@ylight.fr" target="_blank" rel="noopener noreferrer" class="mailito"><em>financeurs@ylight.fr</em></a> pour en savoir plus sur les avantages d'un partenariat financier avec YLight.
+                  </p>
+                  <p>
+                    Ensemble, nous pouvons continuer à faire avancer l'innovation et à créer de la valeur pour nos clients et notre communauté.
+                  </p>
+  
+              </section>
+
+                  <!-- Section: YDesign -->
+              <section id="section4" style="display:none">
+                <h2>YDesign - Votre graphisme personnalisé grâce à l'IA</h2>
+                <p>Y-Design est un projet révolutionnaire en cours de développement par YLight, qui vise à vous 
+                  permettre de donner vie à vos idées de graphisme de manière efficace et personnalisée. Grâce à 
+                  notre technologie avancée basée sur l'intelligence artificielle, nous prévoyons de pouvoir créer des 
+                  graphismes uniques, correspondant parfaitement à vos préférences et à l'identité visuelle que vous 
+                  souhaitez donner à votre projet.</p><br>
+
+                  <h3>Comment ça fonctionnera ?</h3>
+                <p><u>Compréhension de vos besoins :</u> Nous vous demanderons de nous fournir des informations 
+                  détaillées sur vos attentes en matière de graphisme. Vous pourrez nous communiquer vos 
+                  préférences de couleurs, de style, de formes, ainsi que toute autre spécification pertinente. <br><br>
+                  <u>Traitement par l'IA :</u> Notre algorithme d'intelligence artificielle, en cours de développement 
+                  et d'entraînement spécifique, sera conçu pour comprendre et générer des designs. Il prendra 
+                  en compte vos préférences et analysera les données fournies pour générer des propositions 
+                  de graphismes adaptés à votre projet. <br><br>
+                  <u>Présentation des options :</u> Une fois que notre IA aura terminé le processus de génération, 
+                  nous prévoyons de pouvoir vous présenter plusieurs options de graphismes créés 
+                  spécialement pour vous. Chaque option sera unique et conçue pour correspondre à vos 
+                  besoins spécifiques. <br><br>
+                  <u>Personnalisation et ajustements :</u> Vous aurez alors la possibilité de sélectionner la proposition 
+                  qui correspond le mieux à votre vision. Nous prévoyons de mettre à votre disposition de 
+                  nombreux outils d'édition pour vous permettre de personnaliser votre graphisme et de 
+                  l'ajuster selon vos préférences, vous offrant ainsi la possibilité d'obtenir un résultat qui vous 
+                  convient parfaitement. <br><br>
+                  <u>Livraison rapide :</u> Une fois que vous aurez validé le design final, nous prévoyons de pouvoir 
+                  vous offrir la possibilité de le télécharger directement et de l'ajouter à votre espace client. 
+                  Ainsi, lors de vos prochaines actions, telles que vos factures, vous pourrez utiliser votre 
+                  design unique pour une personnalisation optimale. <br><br></p>
+
+                  <h3>Pourquoi choisir Y-Design ?</h3>
+                <p><u>Personnalisation :</u> Nous prévoyons de mettre l'accent sur la personnalisation de chaque 
+                  design pour qu'il reflète parfaitement votre identité et vos objectifs. Vous pourrez être assuré 
+                  d'obtenir un graphisme unique et à votre image. <br><br>
+                  <u>Gain de temps et d'efforts :</u> En utilisant notre futur service Y-Design, vous pourrez 
+                  économiser du temps et des efforts considérables par rapport à la création manuelle de 
+                  graphismes. Notre IA en développement s'occupera du processus complexe à votre place, 
+                  vous permettant ainsi de vous concentrer sur d'autres aspects de votre projet. <br><br>
+                  <u>Qualité professionnelle :</u> Notre équipe future d'experts en IA travaillera sans relâche pour 
+                  s'assurer que les designs générés répondent aux normes les plus élevées de qualité et 
+                  d'esthétique. Vous pourrez être confiant que votre graphisme sera professionnel et attrayant. <br><br>
+                  <u>Suivi personnalisé :</u> Notre future équipe sera là pour vous accompagner tout au long du 
+                  processus. Nous serons à votre écoute, prendrons en compte vos suggestions et vous 
+                  offrirons un service personnalisé pour garantir votre satisfaction. <br><br>
+
+                  <br>
+                  <p>
+                    Avec Y-Design, notre projet en développement, nous visons à vous offrir la possibilité de donner vie à 
+                    votre vision graphique de manière facile, rapide et professionnelle. Ne laissez pas les contraintes 
+                    techniques vous freiner dans la réalisation de vos idées. Faites confiance à YLight et à notre futur 
+                    service Y-Design pour créer des graphismes qui vous démarqueront et qui captiveront votre audience
+                  </p> 
+                  <p>
+                    Nous sommes impatients de vous présenter notre service Y-Design une fois qu'il sera prêt à être 
+                    lancé. N'hésitez pas à nous contacter dès maintenant pour en savoir plus sur notre projet en cours de 
+                    développement et pour être tenu informé des dernières avancées. Nous serons ravis de vous aider à 
+                    concrétiser vos idées graphiques de manière exceptionnelle. 
+                  </p>
+                  <p><i>
+                    Veuillez noter que les détails et les fonctionnalités du service Y-Design sont sujets à des modifications 
+                    dans le cadre de notre développement continu.
+                  </i></p>
+              </section>
+
+                  <!-- Section: YCompta -->
+              <section id="section5" style="display:none">
+                <h2>YCompta - Simplifiez votre comptabilité de projet</h2>
+                <p>Y-Compta est un projet en cours de développement par YLight qui vise à simplifier la gestion 
+                  comptable de votre projet. Nous comprenons que la comptabilité peut être complexe et 
+                  chronophage, c'est pourquoi nous travaillons activement pour développer une solution efficace qui 
+                  vous permettra de garder le contrôle de vos finances sans tracas.</p>
+
+                  <h3>Comment ça fonctionnera ?</h3>
+                <p><u>Suivi des transactions :</u> Avec Y-Compta, vous pourrez facilement enregistrer et suivre toutes 
+                  les transactions financières liées à votre projet. Que ce soit les ventes, les achats, les frais 
+                  généraux ou les dépenses diverses, notre système convivial vous permettra de saisir 
+                  rapidement et précisément toutes les informations nécessaires. <br><br>
+                  <u>Génération de rapports :</u>  Y-Compta vous offrira la possibilité de générer des rapports 
+                  financiers détaillés en quelques clics. Vous pourrez obtenir des informations clés telles que 
+                  les revenus, les dépenses, les bénéfices, les marges, les soldes, etc. Ces rapports vous 
+                  aideront à avoir une vision claire de la santé financière de votre projet. <br><br>
+                  <u>Facturation et suivi des paiements :</u> Y-Compta facilitera également la création de factures 
+                  professionnelles pour vos clients. Vous pourrez personnaliser les modèles de factures, y 
+                  inclure les détails nécessaires et les envoyer directement aux clients depuis notre plateforme. 
+                  De plus, vous pourrez suivre les paiements et les échéances pour vous assurer que vos 
+                  finances sont à jour. <br><br>
+                  <u>Intégration bancaire :</u> Pour simplifier davantage votre comptabilité, Y-Compta vous offrira la 
+                  possibilité d'intégrer vos comptes bancaires. Cela permettra d'automatiser le processus de 
+                  rapprochement bancaire, en faisant correspondre automatiquement les transactions 
+                  enregistrées dans Y-Compta avec celles relevées sur vos relevés bancaires. <br><br>
+                  <u>Conformité fiscale :</u> Y-Compta sera conçu pour vous aider à respecter les exigences fiscales en 
+                  vigueur. Nous tiendrons compte des réglementations et des normes comptables applicables, 
+                  ce qui vous permettra de vous concentrer sur votre activité principale tout en vous assurant 
+                  que votre comptabilité est conforme. <br><br></p>
+
+                  <h3>Pourquoi choisir Y-Compta ?</h3>
+                <p><u>Simplification de la comptabilité :</u> Y-Compta éliminera la complexité de la comptabilité en 
+                  vous offrant une interface conviviale et intuitive. Vous pourrez gérer vos finances sans avoir à 
+                  maîtriser des connaissances comptables approfondies. <br><br>
+                  <u>Gain de temps :</u> En automatisant certaines tâches et en simplifiant les processus, Y-Compta 
+                  vous permettra de gagner du temps précieux. Vous pourrez consacrer plus de temps à votre 
+                  projet et à vos activités principales. <br><br>
+                  <u>Qualité professionnelle :</u> Notre équipe future d'experts en IA travaillera sans relâche pour 
+                  s'assurer que les designs générés répondent aux normes les plus élevées de qualité et 
+                  d'esthétique. Vous pourrez être confiant que votre graphisme sera professionnel et attrayant. <br><br>
+                  <u>Précision et fiabilité :</u> Notre système sera conçu pour garantir l'exactitude des informations 
+                  financières enregistrées. Vous pourrez avoir confiance en la précision de vos rapports et en la 
+                  fiabilité des données que vous gérez. <br><br>
+                  <u>Suivi financier en temps réel :</u> Grâce à Y-Compta, vous aurez une vision claire de votre 
+                  situation financière en temps réel. Vous pourrez prendre des décisions éclairées et ajuster 
+                  votre stratégie en fonction des informations financières disponibles. <br><br>
+                  <u>Support et assistance :</u> Notre équipe de support dédiée sera là pour vous accompagner et 
+                  répondre à toutes vos questions concernant Y-Compta. Que ce soit pour l'installation, 
+                  l'utilisation quotidienne ou toute autre demande d'assistance, nous serons là pour vous aider. <br><br>
+
+                  <br>
+                  <p>
+                    Simplifiez votre comptabilité de projet avec Y-Compta et concentrez-vous sur la croissance et le succès de votre entreprise. Restez à l'affût des dernières nouvelles et annonces concernant le développement de Y-Compta. Nous sommes impatients de vous présenter notre solution une fois qu'elle sera prête à être lancée. N'hésitez pas à nous contacter pour obtenir plus d'informations sur notre projet en cours de développement et pour être tenu informé des avancées. Nous serons ravis de vous aider à simplifier et optimiser votre gestion comptable de manière simple et efficace. 
+                  </p> 
+                  <p><i>
+                    Veuillez noter que les fonctionnalités et les détails de Y-Compta sont sujets à des modifications dans le cadre de notre développement continu.
+                  </i></p>
+              </section>
+
+                  <!-- Section: YWeb -->
+              <section id="section6" style="display:none">
+                <h2>YWeb - Créez votre site Internet intuitivement grâce au système no-code</h2>
+                <p>Y-Web est un projet innovant en cours de développement par YLight qui vise à vous permettre de 
+                  créer votre propre site Internet sans nécessiter de connaissances en programmation. Notre objectif 
+                  est de vous offrir une plateforme no-code conviviale qui vous permettra de donner vie à votre 
+                  présence en ligne de manière intuitive et efficace, en vous concentrant sur le contenu et le design 
+                  plutôt que sur les aspects techniques.</p>
+
+                  <h3>Comment ça fonctionnera ?</h3>
+                <p><u>Sélection du modèle :</u> Vous pourrez choisir parmi une sélection de modèles de sites 
+                  professionnels prédéfinis, spécialement conçus pour répondre à différents besoins et 
+                  industries. Ces modèles seront entièrement personnalisables et vous offriront une base 
+                  solide pour commencer la création de votre site. <br><br>
+                  <u>Personnalisation visuelle :</u>  À partir du modèle sélectionné, vous pourrez personnaliser 
+                  l'apparence de votre site en modifiant les couleurs, les polices, les images et les mises en 
+                  page. Notre interface conviviale vous permettra de visualiser les modifications en temps réel, 
+                  simplifiant ainsi le processus de personnalisation. <br><br>
+                  <u>Présentation des options :</u> Une fois que notre IA aura terminé le processus de génération, 
+                  nous prévoyons de pouvoir vous présenter plusieurs options de graphismes créés 
+                  spécialement pour vous. Chaque option sera unique et conçue pour correspondre à vos 
+                  besoins spécifiques. <br><br>
+                  <u>Personnalisation et ajustements :</u> Vous aurez alors la possibilité de sélectionner la proposition 
+                  qui correspond le mieux à votre vision. Nous prévoyons de mettre à votre disposition de 
+                  nombreux outils d'édition pour vous permettre de personnaliser votre graphisme et de 
+                  l'ajuster selon vos préférences, vous offrant ainsi la possibilité d'obtenir un résultat qui vous 
+                  convient parfaitement. <br><br>
+                  <u>Livraison rapide :</u> Une fois que vous aurez validé le design final, nous prévoyons de pouvoir 
+                  vous offrir la possibilité de le télécharger directement et de l'ajouter à votre espace client. 
+                  Ainsi, lors de vos prochaines actions, telles que vos factures, vous pourrez utiliser votre 
+                  design unique pour une personnalisation optimale. <br><br></p>
+
+                  <h3>Pourquoi choisir Y-Web ?</h3>
+                <p><u>Personnalisation :</u> Nous prévoyons de mettre l'accent sur la personnalisation de chaque 
+                  design pour qu'il reflète parfaitement votre identité et vos objectifs. Vous pourrez être assuré 
+                  d'obtenir un graphisme unique et à votre image. <br><br>
+                  <u>Gain de temps et d'efforts :</u> En utilisant notre futur service Y-Design, vous pourrez 
+                  économiser du temps et des efforts considérables par rapport à la création manuelle de 
+                  graphismes. Notre IA en développement s'occupera du processus complexe à votre place, 
+                  vous permettant ainsi de vous concentrer sur d'autres aspects de votre projet. <br><br>
+                  <u>Qualité professionnelle :</u> Notre équipe future d'experts en IA travaillera sans relâche pour 
+                  s'assurer que les designs générés répondent aux normes les plus élevées de qualité et 
+                  d'esthétique. Vous pourrez être confiant que votre graphisme sera professionnel et attrayant. <br><br>
+                  <u>Suivi personnalisé :</u> Notre future équipe sera là pour vous accompagner tout au long du 
+                  processus. Nous serons à votre écoute, prendrons en compte vos suggestions et vous 
+                  offrirons un service personnalisé pour garantir votre satisfaction. <br><br>
+              </section>
+
+                  <!-- Section YCloud -->
+              <section id="section7" style="display:none">
+                <h2>Y-Cloud - Centralisez et sécurisez vos fichiers avec notre futur service de stockage en ligne</h2>
+                <p>Y-Cloud est un projet en cours de développement par YLight qui vise à vous offrir un service de 
+                  stockage en ligne innovant. Notre objectif est de vous permettre de centraliser et de sécuriser vos 
+                  fichiers en toute simplicité. Nous comprenons l'importance de gérer efficacement vos données, et 
+                  c'est pourquoi nous travaillons activement pour développer une solution pratique et sécurisée.</p>
+
+                  <h3>Comment ça fonctionnera ?</h3>
+                <p><u>Stockage et organisation :</u> Avec Y-Cloud, vous disposerez d'un espace de stockage virtuel où 
+                  vous pourrez télécharger et organiser vos fichiers selon vos besoins. Vous pourrez créer des 
+                  dossiers spécifiques pour différents projets ou catégoriser vos fichiers pour une meilleure 
+                  organisation, vous offrant ainsi une structure adaptée à votre flux de travail. <br><br>
+                  <u>Accès multiplateforme :</u>  Y-Cloud vous offrira la flexibilité d'accéder à vos fichiers depuis 
+                  n'importe quel appareil connecté à Internet. Que vous utilisiez un ordinateur, une tablette ou 
+                  un smartphone, vous pourrez consulter, télécharger ou téléverser vos fichiers en quelques 
+                  clics. <br><br>
+                  <u>Partage sécurisé :</u> Vous pourrez partager vos fichiers en toute sécurité avec des collègues, des 
+                  clients ou des partenaires commerciaux en utilisant les fonctionnalités de partage de Y-Cloud. 
+                  Vous aurez un contrôle total sur les autorisations d'accès, vous permettant de définir qui peut 
+                  voir, modifier ou télécharger vos fichiers. <br><br>
+                  <u>Sauvegarde automatique :</u> Y-Cloud proposera une fonctionnalité de sauvegarde automatique 
+                  pour assurer la sécurité de vos fichiers en cas de perte de données. Vos fichiers seront 
+                  sauvegardés régulièrement sur nos serveurs sans que vous ayez à vous en soucier. <br><br>
+                  <u>Sécurité des données :</u> Y-Cloud garantira la sécurité de vos fichiers grâce à des mesures de 
+                  sécurité avancées. Vos données seront cryptées lors du transfert et au repos, ce qui les 
+                  protégera contre les accès non autorisés. De plus, nous mettrons en place des protocoles de 
+                  sécurité robustes pour garantir la confidentialité et l'intégrité de vos données. <br><br></p>
+
+                  <h3>Pourquoi choisir Y-Cloud ?</h3>
+                <p><u>Centralisation des fichiers :</u> Avec Y-Cloud, vous pourrez regrouper tous vos fichiers au même 
+                  endroit, simplifiant ainsi leur gestion et leur accès. Vous n'aurez plus à chercher des fichiers 
+                  sur différents appareils ou supports de stockage. <br><br>
+                  <u>Accessibilité et flexibilité :</u> Y-Cloud vous permettra d'accéder à vos fichiers de manière 
+                  pratique et sécurisée à partir de n'importe quel appareil connecté à Internet. Vous pourrez 
+                  travailler en déplacement, collaborer avec votre équipe et accéder à vos fichiers importants 
+                  où que vous soyez. <br><br>
+                  <u>Partage collaboratif :</u> Vous pourrez partager vos fichiers avec d'autres personnes de manière 
+                  sécurisée et contrôlée. Facilitez la collaboration avec votre équipe, échangez des fichiers avec 
+                  des clients ou des partenaires commerciaux et travaillez ensemble de manière efficace. <br><br>
+                  <u>Sauvegarde automatique :</u> La fonctionnalité de sauvegarde automatique de Y-Cloud vous 
+                  assurera que vos fichiers sont en sécurité, même en cas de problèmes techniques ou de perte 
+                  de données. Vous pourrez avoir l'esprit tranquille en sachant que vos fichiers seront 
+                  sauvegardés régulièrement et pourront être récupérés en cas de besoin. <br><br>
+                  <u>Sécurité des données :</u> Chez YLight, nous accorderons une grande importance à la sécurité, 
+                  notamment de vos fichiers. Vos données seront cryptées lors du transfert et au repos, et nous 
+                  mettrons en place des mesures de sécurité avancées pour protéger vos fichiers contre tout 
+                  accès non autorisé. Vous pourrez avoir une totale confiance en notre service pour stocker et 
+                  protéger vos données sensibles. <br><br>
+                  <u>Évolutivité :</u> Y-Cloud s'adaptera à vos besoins en matière de stockage. Vous pourrez 
+                  augmenter votre espace de stockage en fonction de la croissance de votre projet, vous 
+                  assurant ainsi d'avoir toujours suffisamment d'espace pour stocker vos fichiers. <br><br>
+
+                  <br>
+                  <p>
+                    Avec Y-Cloud, vous pourrez centraliser, sécuriser et accéder à vos fichiers en toute simplicité. Ne vous inquiétez plus de la gestion de fichiers dispersés sur différents appareils ou supports de stockage. Optez pour Y-Cloud et profitez d'un espace de stockage en ligne pratique et sécurisé pour simplifier votre flux de travail.
+                  </p> 
+                  <p>
+                    Veuillez noter que Y-Cloud est un projet en cours de développement chez YLight. Nous sommes impatients de vous présenter notre solution une fois qu'elle sera prête à être lancée. N'hésitez pas à nous contacter pour en savoir plus sur notre projet en cours de développement et pour être tenu informé des avancées. Nous serons ravis de vous aider à centraliser vos fichiers et à protéger vos données en toute sécurité. 
+                  </p>
+                  <p><i>
+                    Veuillez noter que les fonctionnalités et les détails de Y-Cloud sont sujets à des modifications dans le cadre de notre développement continu.
+                  </i></p>
+              </section>
+
+                  <!-- Section: YDea -->
+              <section id="section8" style="display:none">
+                <h2>Y-Dea - Service personnalisé répondant aux besoins de votre projet, en cours de développement</h2>
+                <p>Y-Dea est un projet en cours de développement par YLight qui vise à vous offrir un service 
+                  personnalisé répondant spécifiquement aux besoins uniques de votre projet. Nous comprenons que 
+                  chaque entreprise a des exigences particulières et des objectifs spécifiques, c'est pourquoi nous 
+                  travaillons activement pour mettre à votre disposition une équipe talentueuse de freelancers prêts à 
+                  vous accompagner dans la réalisation de votre vision.</p>
+
+                  <h3>Comment ça fonctionnera ?</h3>
+                <p><u>Trouvez le freelancer adapté à votre projet :</u> Vous pourrez parcourir notre pool de freelancers 
+                  talentueux et spécialisés pour trouver celui qui correspondra le mieux à vos besoins. Chaque 
+                  freelancer aura son propre profil mettant en avant ses compétences et son expertise dans 
+                  divers domaines. <br><br>
+                  <u>Passez commande chez le freelancer :</u> Une fois que vous aurez trouvé le freelancer qui vous 
+                  convient, vous pourrez passer commande directement auprès de lui. Le freelancer aura la 
+                  possibilité d'accepter ou de refuser la commande en fonction de sa disponibilité et de sa 
+                  capacité à répondre à vos attentes. Si la commande est acceptée, le paiement sera activé 
+                  pour démarrer le projet. <br><br>
+                  <u>Discussion et collaboration :</u> Une fois la commande acceptée, une discussion s'ouvrira entre 
+                  vous et le freelancer. Cette discussion permettra de clarifier les détails du projet, d'échanger 
+                  des idées et de s'assurer que la commande sera réalisée selon vos préférences. Vous pourrez 
+                  partager vos exigences, vos préférences esthétiques et vos attentes spécifiques. <br><br>
+                  <u>Versions et finalisation :</u> Le freelancer travaillera sur le projet en créant différentes versions 
+                  correspondant à vos besoins. Les versions seront ensuite envoyées pour votre examen et 
+                  votre sélection. Vous pourrez donner vos commentaires, demander des modifications et 
+                  choisir la version qui vous convient le mieux. Une fois que la version finale sera choisie, les 
+                  fichiers finaux vous seront fournis sans filigranes, prêts à être utilisés. <br><br></p>
+
+                  <h3>Pourquoi choisir Y-Dea ?</h3>
+                <p><u>Expertise personnalisée :</u> Avec Y-Dea, vous pourrez bénéficier d'une expertise spécialisée qui 
+                  correspondra exactement à vos besoins. Nos freelancers sélectionnés avec soin posséderont 
+                  les compétences et l'expérience nécessaires pour concrétiser vos idées et vous aider à 
+                  atteindre vos objectifs de manière précise et professionnelle. <br><br>
+                  <u>Flexibilité et adaptation :</u> Nous nous adapterons à vos besoins et nous ajusterons en fonction 
+                  de l'évolution de votre projet. Nous comprenons que les projets peuvent évoluer et 
+                  nécessiter des ajustements. Notre équipe de Y-Dea sera flexible et réactive pour répondre à 
+                  vos demandes spécifiques et vous offrir une solution adaptée à chaque étape de votre projet. <br><br>
+                  <u>Partage collaboratif :</u> Vous pourrez partager vos fichiers avec d'autres personnes de manière 
+                  sécurisée et contrôlée. Facilitez la collaboration avec votre équipe, échangez des fichiers avec 
+                  des clients ou des partenaires commerciaux et travaillez ensemble de manière efficace. <br><br>
+                  <u>Qualité et satisfaction :</u> Notre objectif sera de vous satisfaire pleinement en vous offrant des 
+                  résultats concrets et en respectant les plus hauts standards de qualité. Votre satisfaction sera 
+                  notre priorité absolue. <br><br>
+                  <u>Accompagnement complet :</u> Notre équipe de Y-Dea sera là pour vous accompagner à chaque 
+                  étape de votre projet. Nous vous offrirons un support dédié, des conseils d'experts et une 
+                  collaboration transparente pour garantir la réussite de votre projet. NousNous serons à votre 
+                  écoute et prêts à répondre à toutes vos questions et demandes tout au long du processus de 
+                  développement de Y-Dea. <br><br>
+
+                  <br>
+                  <p>
+                    Avec Y-Dea, vous pourrez compter sur une équipe de freelancers talentueux et expérimentés pour concrétiser vos idées et atteindre vos objectifs. Nous serons là pour vous accompagner, vous conseiller et vous fournir des solutions personnalisées adaptées à votre projet.
+                  </p> 
+                  <p>
+                    Veuillez noter que Y-Dea est actuellement en cours de développement chez YLight. Nous sommes impatients de vous présenter notre solution une fois qu'elle sera prête à être lancée. N'hésitez pas à nous contacter pour en savoir plus sur notre projet en cours de développement et pour être tenu informé des avancées. Nous serons ravis de vous aider à réaliser votre vision avec succès grâce à notre service personnalisé et l'aide de nos freelancers qualifiés. 
+                  </p>
+                  <p><i>
+                    Veuillez noter que les fonctionnalités et les détails de Y-Dea sont sujets à des modifications dans le cadre de notre développement continu.
+                  </i></p>
+              </section>
+
+                  <!-- A propos -->
+              <section id="section9" style="display:none">
+                <h2>À Propos de YLight (en cours de développement)</h2>
+                <h3><u>YLight It's just your illumination</u></h3>
+                <p>YLight est bien plus qu'un simple regroupement de services d'ecommerce. Nous sommes en train de développer une plateforme qui réunira divers services essentiels pour aider nos clients à concrétiser leurs idées en projets professionnels de manière efficace et organisée.</p>
+                <p>
+                  Nous comprenons que la réalisation d'un projet nécessite souvent l'utilisation de multiples services tels que la création graphique, le développement web, la gestion financière, le stockage de fichiers et bien d'autres encore. Ce qui rendra YLight unique, c'est que nous rassemblerons ces services au sein d'une seule plateforme, offrant ainsi une flexibilité et une aide à l'organisation époustouflante.
+                </p>
+                <p>
+                  Imaginez pouvoir accéder à tous les services dont vous avez besoin pour mener à bien votre projet, sans avoir à chercher et à coordonner différents prestataires. Chez YLight, nous travaillons actuellement sur cette solution complète. Vous pourrez bientôt bénéficier de notre gamme de services, tous accessibles depuis une même interface conviviale.
+                </p>
+                <p>
+                  Que vous ayez besoin de graphismes personnalisés, de la création d'un site Internet, d'une gestion financière simplifiée, d'un stockage sécurisé de vos fichiers ou même d'un service personnalisé exécuté par nos experts freelancers, nous serons là pour répondre à tous vos besoins.
+                </p>
+                <p>
+                  Notre objectif est de vous offrir une solution tout-en-un qui vous permettra de gagner du temps, de l'énergie et de l'argent. Avec YLight, vous pourrez bénéficier d'une approche intégrée, où tous les services seront conçus pour fonctionner de manière harmonieuse ensemble, vous offrant une expérience fluide et cohérente.
+                </p>
+                <p>
+                  De plus, notre équipe pluridisciplinaire, composée d'experts dans chaque domaine, sera prête à vous accompagner tout au long de votre parcours. Nous serons là pour répondre à vos questions, vous conseiller et vous aider à tirer le meilleur parti de nos services.
+                </p>
+                <p>
+                  Chez YLight, nous croyons en l'importance de l'efficacité, de la qualité et de la satisfaction client. Notre plateforme est en cours de développement et sera soigneusement conçue et testée pour éviter tout risque de dysfonctionnement et garantir une expérience utilisateur optimale.
+                </p>
+                <p>
+                  Nous sommes impatients de vous offrir une solution unique qui réunira tous les services dont vous avez besoin pour donner vie à votre projet. Restez à l'écoute pour rejoindre la communauté YLight dès que nous serons prêts et découvrez la flexibilité et l'organisation sans précédent que nous offrirons.
+                </p>
+                <p>
+                  Contactez nous pour en savoir plus sur nos services en cours de développement ou pour discuter de la manière dont YLight pourra vous aider à concrétiser vos idées en projets professionnels de manière efficace et simplifiée.
+                </p>
+              </section>
+
+                  <!-- Section: Partenaires -->
+                  <section id="section10" style="display:none">
+
+                    <h2>Découvrez nos partenaires qui contribuent à l'écosystème d'YLight <br><br></h2>
+                    
+                    <div class="partenaires">
+                      <div class="app-card2">
+                        <a href="http://" target="_blank" rel="noopener noreferrer">
+                          <img src="assets/soon.png" alt="">
+                        </a>
+                      </div>
+                      <div class="app-card2">
+                        <a href="http://" target="_blank" rel="noopener noreferrer">
+                          <img src="assets/soon.png" alt="">
+                        </a>
+                      </div>
+                      <div class="app-card2">
+                        <a href="http://" target="_blank" rel="noopener noreferrer">
+                          <img src="assets/soon.png" alt="">
+                        </a>
+                      </div>
+                      <div class="app-card2">
+                        <a href="http://" target="_blank" rel="noopener noreferrer">
+                          <img src="assets/soon.png" alt="">
+                        </a>
+                      </div>
+                    </div> <br><br>
+    
+                    <p class="">
+                       Nous sommes fiers de collaborer avec ces entreprises et organisations qui partagent nos valeurs et notre engagement envers l'innovation, la qualité et la satisfaction client. <br><br>
+                       
+                       Vous souhaitez devenir partenaire d'YLight et rejoindre notre réseau dynamique ? Nous serions ravis de discuter des opportunités de collaboration mutuellement bénéfiques. Contactez aujourd'hui à l'adresse <em><a class="mailito" href="mailto:partenariat@ylight.fr">partenariat@ylight.fr</a></em> nous dès pour en savoir plus sur les avantages d'un partenariat avec YLight. <br><br>
+                       
+                       Rejoignez-nous et ensemble, nous pourrons accomplir de grandes choses !
+                    </p>
+    
+                  </section>
+    
+                  <!--Nos Equipe -->
+              <section id="section11" style="display:none">
+                <h2>Notre équipe</h2>
+                <p>Découvrez les membres talentueux et passionnés qui composent notre équipe chez YLight. Leur 
+                  expertise et leur dévouement sont essentiels pour offrir des services de qualité et accompagner nos 
+                  clients dans la concrétisation de leurs projets.</p>
+
+                  <div class="slider">
+                    <div class="carousel owl-carousel">
+                      <div class="content-section">
+                        <div class="content-section-title">Rencontrez notre équipe : <br></div>
+                        <div class="apps-card">
+
+                          <div class="app-card">
+                            <span> 
+                              <img src="https://cdn.discordapp.com/avatars/808055700928331826/f6c0b2c72d144a6f82570b54436a99c2.png?size=2048" alt="" class="app-card-img">
+                              Zoltán
+                            </span>
+                            <div class="app-card__subtext">Fondateur et Manager du projet!</div>
+                            <div class="app-card-buttons">
+                              <button class="content-button status-button"><a href="https://www.youtube.com/@ylight_fr" target="_blank" rel="noopener noreferrer">Visiter</a></button>
+                            </div>
+                          </div>
+
+                          <div class="app-card">
+                            <span> 
+                              <img src="assets/favicon.png" alt="" class="app-card-img">
+                              Ysé
+                            </span>
+                            <div class="app-card__subtext">Responsable des réseaux sociaux!</div>
+                            <div class="app-card-buttons">
+                              <button class="content-button status-button"><a href="https://www.youtube.com/@ylight_fr" target="_blank" rel="noopener noreferrer">Visiter</a></button>
+                            </div>
+                          </div>
+
+                          <div class="app-card">
+                            <span> 
+                              <img src="https://cdn.discordapp.com/avatars/684822803362611252/d0241d8b18b55ccf57a6b1d7cbafa7f2.png?size=2048" alt="" class="app-card-img">
+                              PPC
+                            </span>
+                            <div class="app-card__subtext">Développeur Web et membre du Support!</div>
+                            <div class="app-card-buttons">
+                              <button class="content-button status-button"><a href="https://ppc408.com" target="_blank" rel="noopener noreferrer">Visiter</a></button>
+                            </div>
+                          </div> <br><br>
+
+                          <div class="app-card">
+                            <span> 
+                              <img src="https://cdn.discordapp.com/avatars/1025779891528011777/b50406eb54f2d4298ad8badc70137511.png?size=2048" alt="" class="app-card-img">
+                              Albator
+                            </span>
+                            <div class="app-card__subtext">Développeur Bot!</div>
+                            <div class="app-card-buttons">
+                              <button class="content-button status-button"><a href="" target="_blank" rel="noopener noreferrer">Visiter</a></button>
+                            </div>
+                          </div> 
+
+                          <div class="app-card">
+                            <span> 
+                              <img src="https://cdn.discordapp.com/avatars/714869931396825200/a2c404f718b3d0602918d6af8bb21eb7.png?size=2048" alt="" class="app-card-img">
+                              LeChatLyon
+                            </span>
+                            <div class="app-card__subtext">Graphiste, Assistant, Modérateur!</div>
+                            <div class="app-card-buttons">
+                              <button class="content-button status-button"><a href="https://xania.online/lechat.html" target="_blank" rel="noopener noreferrer">Visiter</a></button>
+                            </div>
+                          </div>  
+  
+                        </div>
+                      </div>
+                    </div>
+                  </div> <br>
+  
+                  <p>
+                    Nous sommes fiers de l'engagement et du professionnalisme de chaque membre de notre équipe. Leur passion pour l'innovation et leur détermination à offrir des résultats exceptionnels sont les moteurs de notre succès.
+                  </p>
+                  <p>
+                    Si vous souhaitez rejoindre notre équipe et faire partie de cette aventure passionnante, nous serions ravis de discuter des opportunités de carrière chez YLight. Contactez-nous à l'adresse <a href="mailito:recrutements@ylight.fr" target="_blank" rel="noopener noreferrer" class="mailito"><em>recrutements@ylight.fr</em></a> pour en savoir plus sur postes disponibles et les avantages de travailler avec nous.
+                    us.
+                  </p>
+                  <p>
+                    Ensemble, nous formons une équipe solide et dédiée à la réussite de nos clients.
+                  </p>
+              </section>
+              
+                  <!-- Footer -->
+              <section class="footer">
+                <hr>
+                <center>
+                  <div class="copyrights">
+                    <p class="ylightf u-animation">Copyright &copy; 2023 - 2023 Ylight All rights reserved. </p> <br>
+                    <!-- <p class="ylightf u-animation">Copyright $copy; 2023 - 2023 PPC All rights reserved. </p> -->
+                  </div>
+                </center>
+              </section>
+
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+      <div class="overlay-app"></div>
+      </div>
+    </section>
+
+      <!-- Sections 12 -->
+      <section id="section12" class="section12">
+        <img src="assets/Logo2.png" alt="Logo" width="500px"> <br>
+        <center>
+          <a id="launch" href="#" onclick="setTimeout(showApp, 500);">
+            <!-- <button id="launchButton" class="button">Launch</button> -->
+  
+            <div class="sparkle-button">
+  
+              <button id="sparklebutton">
+                <span class="spark"></span>
+                <!-- <span class="spark"></span> -->
+                <span class="backdrop"></span>
+                <svg class="sparkle" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14.187 8.096L15 5.25L15.813 8.096C16.0231 8.83114 16.4171 9.50062 16.9577 10.0413C17.4984 10.5819 18.1679 10.9759 18.903 11.186L21.75 12L18.904 12.813C18.1689 13.0231 17.4994 13.4171 16.9587 13.9577C16.4181 14.4984 16.0241 15.1679 15.814 15.903L15 18.75L14.187 15.904C13.9769 15.1689 13.5829 14.4994 13.0423 13.9587C12.5016 13.4181 11.8321 13.0241 11.097 12.814L8.25 12L11.096 11.187C11.8311 10.9769 12.5006 10.5829 13.0413 10.0423C13.5819 9.50162 13.9759 8.83214 14.186 8.097L14.187 8.096Z" fill="black" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M6 14.25L5.741 15.285C5.59267 15.8785 5.28579 16.4206 4.85319 16.8532C4.42059 17.2858 3.87853 17.5927 3.285 17.741L2.25 18L3.285 18.259C3.87853 18.4073 4.42059 18.7142 4.85319 19.1468C5.28579 19.5794 5.59267 20.1215 5.741 20.715L6 21.75L6.259 20.715C6.40725 20.1216 6.71398 19.5796 7.14639 19.147C7.5788 18.7144 8.12065 18.4075 8.714 18.259L9.75 18L8.714 17.741C8.12065 17.5925 7.5788 17.2856 7.14639 16.853C6.71398 16.4204 6.40725 15.8784 6.259 15.285L6 14.25Z" fill="black" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M6.5 4L6.303 4.5915C6.24777 4.75718 6.15472 4.90774 6.03123 5.03123C5.90774 5.15472 5.75718 5.24777 5.5915 5.303L5 5.5L5.5915 5.697C5.75718 5.75223 5.90774 5.84528 6.03123 5.96877C6.15472 6.09226 6.24777 6.24282 6.303 6.4085L6.5 7L6.697 6.4085C6.75223 6.24282 6.84528 6.09226 6.96877 5.96877C7.09226 5.84528 7.24282 5.75223 7.4085 5.697L8 5.5L7.4085 5.303C7.24282 5.24777 7.09226 5.15472 6.96877 5.03123C6.84528 4.90774 6.75223 4.75718 6.697 4.5915L6.5 4Z" fill="black" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <span class="text">Lancer YLight</span>
+              </button>
+              <div class="bodydrop"></div>
+              <span aria-hidden="true" class="particle-pen">
+                <svg class="particle" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.937 3.846L7.75 1L8.563 3.846C8.77313 4.58114 9.1671 5.25062 9.70774 5.79126C10.2484 6.3319 10.9179 6.72587 11.653 6.936L14.5 7.75L11.654 8.563C10.9189 8.77313 10.2494 9.1671 9.70874 9.70774C9.1681 10.2484 8.77413 10.9179 8.564 11.653L7.75 14.5L6.937 11.654C6.72687 10.9189 6.3329 10.2494 5.79226 9.70874C5.25162 9.1681 4.58214 8.77413 3.847 8.564L1 7.75L3.846 6.937C4.58114 6.72687 5.25062 6.3329 5.79126 5.79226C6.3319 5.25162 6.72587 4.58214 6.936 3.847L6.937 3.846Z" fill="black" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <svg class="particle" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.937 3.846L7.75 1L8.563 3.846C8.77313 4.58114 9.1671 5.25062 9.70774 5.79126C10.2484 6.3319 10.9179 6.72587 11.653 6.936L14.5 7.75L11.654 8.563C10.9189 8.77313 10.2494 9.1671 9.70874 9.70774C9.1681 10.2484 8.77413 10.9179 8.564 11.653L7.75 14.5L6.937 11.654C6.72687 10.9189 6.3329 10.2494 5.79226 9.70874C5.25162 9.1681 4.58214 8.77413 3.847 8.564L1 7.75L3.846 6.937C4.58114 6.72687 5.25062 6.3329 5.79126 5.79226C6.3319 5.25162 6.72587 4.58214 6.936 3.847L6.937 3.846Z" fill="black" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <svg class="particle" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.937 3.846L7.75 1L8.563 3.846C8.77313 4.58114 9.1671 5.25062 9.70774 5.79126C10.2484 6.3319 10.9179 6.72587 11.653 6.936L14.5 7.75L11.654 8.563C10.9189 8.77313 10.2494 9.1671 9.70874 9.70774C9.1681 10.2484 8.77413 10.9179 8.564 11.653L7.75 14.5L6.937 11.654C6.72687 10.9189 6.3329 10.2494 5.79226 9.70874C5.25162 9.1681 4.58214 8.77413 3.847 8.564L1 7.75L3.846 6.937C4.58114 6.72687 5.25062 6.3329 5.79126 5.79226C6.3319 5.25162 6.72587 4.58214 6.936 3.847L6.937 3.846Z" fill="black" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <svg class="particle" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.937 3.846L7.75 1L8.563 3.846C8.77313 4.58114 9.1671 5.25062 9.70774 5.79126C10.2484 6.3319 10.9179 6.72587 11.653 6.936L14.5 7.75L11.654 8.563C10.9189 8.77313 10.2494 9.1671 9.70874 9.70774C9.1681 10.2484 8.77413 10.9179 8.564 11.653L7.75 14.5L6.937 11.654C6.72687 10.9189 6.3329 10.2494 5.79226 9.70874C5.25162 9.1681 4.58214 8.77413 3.847 8.564L1 7.75L3.846 6.937C4.58114 6.72687 5.25062 6.3329 5.79126 5.79226C6.3319 5.25162 6.72587 4.58214 6.936 3.847L6.937 3.846Z" fill="black" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <svg class="particle" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.937 3.846L7.75 1L8.563 3.846C8.77313 4.58114 9.1671 5.25062 9.70774 5.79126C10.2484 6.3319 10.9179 6.72587 11.653 6.936L14.5 7.75L11.654 8.563C10.9189 8.77313 10.2494 9.1671 9.70874 9.70774C9.1681 10.2484 8.77413 10.9179 8.564 11.653L7.75 14.5L6.937 11.654C6.72687 10.9189 6.3329 10.2494 5.79226 9.70874C5.25162 9.1681 4.58214 8.77413 3.847 8.564L1 7.75L3.846 6.937C4.58114 6.72687 5.25062 6.3329 5.79126 5.79226C6.3319 5.25162 6.72587 4.58214 6.936 3.847L6.937 3.846Z" fill="black" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <svg class="particle" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.937 3.846L7.75 1L8.563 3.846C8.77313 4.58114 9.1671 5.25062 9.70774 5.79126C10.2484 6.3319 10.9179 6.72587 11.653 6.936L14.5 7.75L11.654 8.563C10.9189 8.77313 10.2494 9.1671 9.70874 9.70774C9.1681 10.2484 8.77413 10.9179 8.564 11.653L7.75 14.5L6.937 11.654C6.72687 10.9189 6.3329 10.2494 5.79226 9.70874C5.25162 9.1681 4.58214 8.77413 3.847 8.564L1 7.75L3.846 6.937C4.58114 6.72687 5.25062 6.3329 5.79126 5.79226C6.3319 5.25162 6.72587 4.58214 6.936 3.847L6.937 3.846Z" fill="black" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <svg class="particle" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.937 3.846L7.75 1L8.563 3.846C8.77313 4.58114 9.1671 5.25062 9.70774 5.79126C10.2484 6.3319 10.9179 6.72587 11.653 6.936L14.5 7.75L11.654 8.563C10.9189 8.77313 10.2494 9.1671 9.70874 9.70774C9.1681 10.2484 8.77413 10.9179 8.564 11.653L7.75 14.5L6.937 11.654C6.72687 10.9189 6.3329 10.2494 5.79226 9.70874C5.25162 9.1681 4.58214 8.77413 3.847 8.564L1 7.75L3.846 6.937C4.58114 6.72687 5.25062 6.3329 5.79126 5.79226C6.3319 5.25162 6.72587 4.58214 6.936 3.847L6.937 3.846Z" fill="black" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <svg class="particle" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.937 3.846L7.75 1L8.563 3.846C8.77313 4.58114 9.1671 5.25062 9.70774 5.79126C10.2484 6.3319 10.9179 6.72587 11.653 6.936L14.5 7.75L11.654 8.563C10.9189 8.77313 10.2494 9.1671 9.70874 9.70774C9.1681 10.2484 8.77413 10.9179 8.564 11.653L7.75 14.5L6.937 11.654C6.72687 10.9189 6.3329 10.2494 5.79226 9.70874C5.25162 9.1681 4.58214 8.77413 3.847 8.564L1 7.75L3.846 6.937C4.58114 6.72687 5.25062 6.3329 5.79126 5.79226C6.3319 5.25162 6.72587 4.58214 6.936 3.847L6.937 3.846Z" fill="black" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <svg class="particle" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.937 3.846L7.75 1L8.563 3.846C8.77313 4.58114 9.1671 5.25062 9.70774 5.79126C10.2484 6.3319 10.9179 6.72587 11.653 6.936L14.5 7.75L11.654 8.563C10.9189 8.77313 10.2494 9.1671 9.70874 9.70774C9.1681 10.2484 8.77413 10.9179 8.564 11.653L7.75 14.5L6.937 11.654C6.72687 10.9189 6.3329 10.2494 5.79226 9.70874C5.25162 9.1681 4.58214 8.77413 3.847 8.564L1 7.75L3.846 6.937C4.58114 6.72687 5.25062 6.3329 5.79126 5.79226C6.3319 5.25162 6.72587 4.58214 6.936 3.847L6.937 3.846Z" fill="black" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <svg class="particle" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.937 3.846L7.75 1L8.563 3.846C8.77313 4.58114 9.1671 5.25062 9.70774 5.79126C10.2484 6.3319 10.9179 6.72587 11.653 6.936L14.5 7.75L11.654 8.563C10.9189 8.77313 10.2494 9.1671 9.70874 9.70774C9.1681 10.2484 8.77413 10.9179 8.564 11.653L7.75 14.5L6.937 11.654C6.72687 10.9189 6.3329 10.2494 5.79226 9.70874C5.25162 9.1681 4.58214 8.77413 3.847 8.564L1 7.75L3.846 6.937C4.58114 6.72687 5.25062 6.3329 5.79126 5.79226C6.3319 5.25162 6.72587 4.58214 6.936 3.847L6.937 3.846Z" fill="black" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                </svg><svg class="particle" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.937 3.846L7.75 1L8.563 3.846C8.77313 4.58114 9.1671 5.25062 9.70774 5.79126C10.2484 6.3319 10.9179 6.72587 11.653 6.936L14.5 7.75L11.654 8.563C10.9189 8.77313 10.2494 9.1671 9.70874 9.70774C9.1681 10.2484 8.77413 10.9179 8.564 11.653L7.75 14.5L6.937 11.654C6.72687 10.9189 6.3329 10.2494 5.79226 9.70874C5.25162 9.1681 4.58214 8.77413 3.847 8.564L1 7.75L3.846 6.937C4.58114 6.72687 5.25062 6.3329 5.79126 5.79226C6.3319 5.25162 6.72587 4.58214 6.936 3.847L6.937 3.846Z" fill="black" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                </svg><svg class="particle" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.937 3.846L7.75 1L8.563 3.846C8.77313 4.58114 9.1671 5.25062 9.70774 5.79126C10.2484 6.3319 10.9179 6.72587 11.653 6.936L14.5 7.75L11.654 8.563C10.9189 8.77313 10.2494 9.1671 9.70874 9.70774C9.1681 10.2484 8.77413 10.9179 8.564 11.653L7.75 14.5L6.937 11.654C6.72687 10.9189 6.3329 10.2494 5.79226 9.70874C5.25162 9.1681 4.58214 8.77413 3.847 8.564L1 7.75L3.846 6.937C4.58114 6.72687 5.25062 6.3329 5.79126 5.79226C6.3319 5.25162 6.72587 4.58214 6.936 3.847L6.937 3.846Z" fill="black" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <svg class="particle" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.937 3.846L7.75 1L8.563 3.846C8.77313 4.58114 9.1671 5.25062 9.70774 5.79126C10.2484 6.3319 10.9179 6.72587 11.653 6.936L14.5 7.75L11.654 8.563C10.9189 8.77313 10.2494 9.1671 9.70874 9.70774C9.1681 10.2484 8.77413 10.9179 8.564 11.653L7.75 14.5L6.937 11.654C6.72687 10.9189 6.3329 10.2494 5.79226 9.70874C5.25162 9.1681 4.58214 8.77413 3.847 8.564L1 7.75L3.846 6.937C4.58114 6.72687 5.25062 6.3329 5.79126 5.79226C6.3319 5.25162 6.72587 4.58214 6.936 3.847L6.937 3.846Z" fill="black" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                </svg><svg class="particle" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.937 3.846L7.75 1L8.563 3.846C8.77313 4.58114 9.1671 5.25062 9.70774 5.79126C10.2484 6.3319 10.9179 6.72587 11.653 6.936L14.5 7.75L11.654 8.563C10.9189 8.77313 10.2494 9.1671 9.70874 9.70774C9.1681 10.2484 8.77413 10.9179 8.564 11.653L7.75 14.5L6.937 11.654C6.72687 10.9189 6.3329 10.2494 5.79226 9.70874C5.25162 9.1681 4.58214 8.77413 3.847 8.564L1 7.75L3.846 6.937C4.58114 6.72687 5.25062 6.3329 5.79126 5.79226C6.3319 5.25162 6.72587 4.58214 6.936 3.847L6.937 3.846Z" fill="black" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                </svg><svg class="particle" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.937 3.846L7.75 1L8.563 3.846C8.77313 4.58114 9.1671 5.25062 9.70774 5.79126C10.2484 6.3319 10.9179 6.72587 11.653 6.936L14.5 7.75L11.654 8.563C10.9189 8.77313 10.2494 9.1671 9.70874 9.70774C9.1681 10.2484 8.77413 10.9179 8.564 11.653L7.75 14.5L6.937 11.654C6.72687 10.9189 6.3329 10.2494 5.79226 9.70874C5.25162 9.1681 4.58214 8.77413 3.847 8.564L1 7.75L3.846 6.937C4.58114 6.72687 5.25062 6.3329 5.79126 5.79226C6.3319 5.25162 6.72587 4.58214 6.936 3.847L6.937 3.846Z" fill="black" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                </svg><svg class="particle" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.937 3.846L7.75 1L8.563 3.846C8.77313 4.58114 9.1671 5.25062 9.70774 5.79126C10.2484 6.3319 10.9179 6.72587 11.653 6.936L14.5 7.75L11.654 8.563C10.9189 8.77313 10.2494 9.1671 9.70874 9.70774C9.1681 10.2484 8.77413 10.9179 8.564 11.653L7.75 14.5L6.937 11.654C6.72687 10.9189 6.3329 10.2494 5.79226 9.70874C5.25162 9.1681 4.58214 8.77413 3.847 8.564L1 7.75L3.846 6.937C4.58114 6.72687 5.25062 6.3329 5.79126 5.79226C6.3319 5.25162 6.72587 4.58214 6.936 3.847L6.937 3.846Z" fill="black" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                </svg><svg class="particle" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.937 3.846L7.75 1L8.563 3.846C8.77313 4.58114 9.1671 5.25062 9.70774 5.79126C10.2484 6.3319 10.9179 6.72587 11.653 6.936L14.5 7.75L11.654 8.563C10.9189 8.77313 10.2494 9.1671 9.70874 9.70774C9.1681 10.2484 8.77413 10.9179 8.564 11.653L7.75 14.5L6.937 11.654C6.72687 10.9189 6.3329 10.2494 5.79226 9.70874C5.25162 9.1681 4.58214 8.77413 3.847 8.564L1 7.75L3.846 6.937C4.58114 6.72687 5.25062 6.3329 5.79126 5.79226C6.3319 5.25162 6.72587 4.58214 6.936 3.847L6.937 3.846Z" fill="black" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                </svg><svg class="particle" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.937 3.846L7.75 1L8.563 3.846C8.77313 4.58114 9.1671 5.25062 9.70774 5.79126C10.2484 6.3319 10.9179 6.72587 11.653 6.936L14.5 7.75L11.654 8.563C10.9189 8.77313 10.2494 9.1671 9.70874 9.70774C9.1681 10.2484 8.77413 10.9179 8.564 11.653L7.75 14.5L6.937 11.654C6.72687 10.9189 6.3329 10.2494 5.79226 9.70874C5.25162 9.1681 4.58214 8.77413 3.847 8.564L1 7.75L3.846 6.937C4.58114 6.72687 5.25062 6.3329 5.79126 5.79226C6.3319 5.25162 6.72587 4.58214 6.936 3.847L6.937 3.846Z" fill="black" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                </svg><svg class="particle" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.937 3.846L7.75 1L8.563 3.846C8.77313 4.58114 9.1671 5.25062 9.70774 5.79126C10.2484 6.3319 10.9179 6.72587 11.653 6.936L14.5 7.75L11.654 8.563C10.9189 8.77313 10.2494 9.1671 9.70874 9.70774C9.1681 10.2484 8.77413 10.9179 8.564 11.653L7.75 14.5L6.937 11.654C6.72687 10.9189 6.3329 10.2494 5.79226 9.70874C5.25162 9.1681 4.58214 8.77413 3.847 8.564L1 7.75L3.846 6.937C4.58114 6.72687 5.25062 6.3329 5.79126 5.79226C6.3319 5.25162 6.72587 4.58214 6.936 3.847L6.937 3.846Z" fill="black" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                </svg><svg class="particle" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.937 3.846L7.75 1L8.563 3.846C8.77313 4.58114 9.1671 5.25062 9.70774 5.79126C10.2484 6.3319 10.9179 6.72587 11.653 6.936L14.5 7.75L11.654 8.563C10.9189 8.77313 10.2494 9.1671 9.70874 9.70774C9.1681 10.2484 8.77413 10.9179 8.564 11.653L7.75 14.5L6.937 11.654C6.72687 10.9189 6.3329 10.2494 5.79226 9.70874C5.25162 9.1681 4.58214 8.77413 3.847 8.564L1 7.75L3.846 6.937C4.58114 6.72687 5.25062 6.3329 5.79126 5.79226C6.3319 5.25162 6.72587 4.58214 6.936 3.847L6.937 3.846Z" fill="black" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </span>
+            </div>
+  
+          </a>
+        </center>
+      </section>
+
+    <!-- partial -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script>
+      window.__cfRLUnblockHandlers = true;
+      </script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

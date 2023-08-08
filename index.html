@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        // Fonction de détection d'appareil
+        function detectDevice() {
+            if (window.innerWidth >= 945) {
+                // Rediriger vers la version desktop
+                window.location.href = "pages_mobile-pc/index-desktop.html";
+            } else {
+                // Rediriger vers la version mobile
+                window.location.href = "pages_mobile-pc/index-mobile.html";
+            }
+        }
+    </script>
+</head>
+<body>
+    <script>
+        detectDevice();
+    </script>
+</body>
+</html>
