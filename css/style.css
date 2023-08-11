@@ -690,28 +690,11 @@ body.light-mode .video-bg:before {
   margin: 0 12px;
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 945px) {
 /* Cacher tous les éléments par défaut */
 .adobe-product {
-  display: none;
-}
-
-/* Animation pour afficher un par un */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(-20px); /* Décalage vers le haut */
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* Appliquer l'animation à chaque élément */
-.adobe-product.animated {
-  animation: fadeIn 0.5s ease-in-out forwards;
-  animation-delay: 0.5s; /* Délai entre chaque élément */
+  display: block;
+  margin-bottom: 20px; /* Espacement entre chaque élément */
 }
 
 }
