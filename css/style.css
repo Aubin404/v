@@ -337,7 +337,7 @@ body.light-mode .video-bg:before {
 
 @media screen and (max-width: 945px) {
   .header-img {
-    width: 50%;
+    width: 10%;
     margin-left: 14%;
     margin-top: auto;
   }
